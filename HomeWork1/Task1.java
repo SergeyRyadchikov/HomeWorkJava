@@ -1,6 +1,8 @@
 // 1. Вычислить n-ое треугольного число(сумма чисел от 1 до n), n!
 // (произведение чисел от 1 до n)
 
+package HomeWork1;
+
 import java.util.Scanner;
 
 class Task1 {
@@ -8,10 +10,13 @@ class Task1 {
         int result = userNum * (userNum + 1) / 2;
         return result;
     }
-    static int factorial (int userNum){
-        if (userNum == 1) return 1;
+
+    static int factorial(int userNum) {
+        if (userNum == 1)
+            return 1;
         return userNum * factorial(userNum - 1);
     }
+
     public static void main(String[] args) {
         Scanner Enter = new Scanner(System.in);
         System.out.printf("Введите число: ");
